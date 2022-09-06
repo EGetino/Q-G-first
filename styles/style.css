@@ -317,8 +317,9 @@ ul li:hover > ul {
     padding: 20px;
     width: 250px;
     border-radius: 10px;
-
     box-shadow: 0 25px 50px -12px rgba(255, 192, 203, 1);
+
+    transition: all 0.3s;
 }
 
 .card:hover {
@@ -347,6 +348,8 @@ ul li:hover > ul {
 
     display: inline-block;       
     cursor: pointer;
+
+    transition: all 0.5s;
 }
 
 .card__link:hover {
