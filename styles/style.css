@@ -367,6 +367,11 @@ ul li:hover > ul {
 
 /* ---------- NOSOTROS-----------*/
 
+.aboutus_main {
+    min-height: 100vh;
+    background-color: white;
+}
+
 .aboutus {
     padding: 40px;
 
@@ -379,6 +384,53 @@ ul li:hover > ul {
     padding-top: 10px;
     font-size: 15px;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sprinkles {
+    position: relative;
+    display: flex;
+}
+
+.sprinkles span {
+    position: relative;
+    width: 15px;
+    height: 30px;
+    background: rgb(255, 123, 0);
+    margin: 0 4px;
+    border-radius: 45%;
+    box-shadow: 0 0 10px rgb(214, 105, 2),
+    0 0 50px rgb(255, 123, 0),
+    0 0 100px rgb(255, 123, 0);
+    animation: animacion 15s reverse infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.sprinkles span:nth-child(even) {
+    background: #f3405e;
+    box-shadow: 0 0 10px #cc354e,
+    0 0 50px #f3405e,
+    0 0 100px #f3405e;
+}
+
+
+@keyframes animacion {
+    0% {
+        transform: translateY(100vh) scale(1);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(0);
+    }
+}
+
+
+
 
 
 
