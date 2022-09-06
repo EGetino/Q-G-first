@@ -82,9 +82,17 @@ ul li:hover > ul {
     align-items: center;
 }
 
+.nav-item a{
+    transition: all 0.3s;
+}
+
 .nav-item a:hover {
     color: white;
     font-size: 20px;
+}
+
+.nav-item a img {
+    transition: all 0.3s;
 }
 
 .nav-item a img:hover {
