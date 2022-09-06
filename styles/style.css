@@ -383,6 +383,10 @@ ul li:hover > ul {
     align-items: center;   
 }
 
+.aboutus img {
+    border-radius: 20px;
+}
+
 .aboutus div p {
     padding-top: 10px;
     font-size: 15px;
@@ -411,7 +415,7 @@ ul li:hover > ul {
     0 0 50px rgb(255, 123, 0),
     0 0 100px rgb(255, 123, 0);
     animation: animacion 15s reverse infinite;
-    animation-duration: calc(120s / var(--i));
+    animation-duration: calc(100s / var(--i));
 }
 
 .sprinkles span:nth-child(even) {
