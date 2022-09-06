@@ -118,11 +118,19 @@ ul li:hover > ul {
     font-size: 15px;
 
     color: black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     border-color: black;  
 }
 
+.hero__button {
+    transition: all 0.3s;
+}
+
+.hero__button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateY(-5px);
+}
 
 .hero__content-socials {    
     list-style: none;
@@ -131,6 +139,14 @@ ul li:hover > ul {
     display: flex;
     justify-content: center;
     gap: 50px;          
+}
+
+.social_media {
+    transition: all 0.5s;
+}
+
+.social_media:hover {
+    transform: translateY(-10px);
 }
 
 /*-------------- HEADER PAGINAS ----------- */
@@ -452,8 +468,22 @@ ul li:hover > ul {
     z-index: 1;
 }
 
+.whatsapp img {
+    transition: all 0.5s;
+}
+
+.whatsapp img:hover {
+    width: 55px;
+}
+
 /* ------------- fin de footer-------------*/
 
 
 
 /* ------------- ANIMISTA-------------*/
+
+.tracking-in-expand{animation:tracking-in-expand 1.5s cubic-bezier(.215,.61,.355,1.000) both}
+ @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.fade-in{animation:fade-in 1.8s cubic-bezier(.39,.575,.565,1.000) both}
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
