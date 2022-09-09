@@ -381,13 +381,16 @@ ul li:hover > ul {
 
 .aboutus {
     padding: 40px;
+    margin: 20px;
 
     display: flex;
     justify-content: space-between; 
-    align-items: center;   
+    align-items: center;  
+    gap: 30px; 
+    
 }
 
-.aboutus img {
+.aboutus_img {
     border-radius: 20px;
 }
 
@@ -403,32 +406,6 @@ ul li:hover > ul {
     overflow: hidden;
 }
 
-.sprinkles {
-    position: relative;
-    display: flex;
-}
-
-.sprinkles span {
-    position: relative;
-    width: 15px;
-    height: 30px;
-    background: rgb(255, 123, 0);
-    margin: 0 4px;
-    border-radius: 45%;
-    box-shadow: 0 0 10px rgb(214, 105, 2),
-    0 0 50px rgb(255, 123, 0),
-    0 0 100px rgb(255, 123, 0);
-    animation: animacion 15s reverse infinite;
-    animation-duration: calc(100s / var(--i));
-}
-
-.sprinkles span:nth-child(even) {
-    background: #f3405e;
-    box-shadow: 0 0 10px #cc354e,
-    0 0 50px #f3405e,
-    0 0 100px #f3405e;
-}
-
 
 @keyframes animacion {
     0% {
@@ -441,10 +418,6 @@ ul li:hover > ul {
 }
 
 
-
-
-
-
 /* ---------- CONTACTO-----------*/
 
 .main__contact {
@@ -452,10 +425,11 @@ ul li:hover > ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     place-items: center;
+    align-items: center;
 }
 
 .contact {
-    padding: 40px;
+    padding: 30px;
 
     display: flex;
     flex-direction: row;  
@@ -587,6 +561,14 @@ ul li:hover > ul {
 
 /* ------------- MEDIA QUERIES-------------*/
 
+@media (max-width:992px){
+    .aboutus {
+        
+        display: flex;
+        flex-direction: column;         
+    }
+}
+
 @media (max-width:827px){
     
     .hero_h1 h1 {
@@ -604,6 +586,10 @@ ul li:hover > ul {
     .hero_h1 h1 {
         font-size: 25px;
         text-align: center;
+    }
+
+    .products__org {
+        display: none;
     }
 
     .main__contact {
@@ -637,6 +623,16 @@ ul li:hover > ul {
         font-size: 20px;
         text-align: center;
     }
+
+    .aboutus_img {
+        margin: 30px;
+    }
+
+    .prodmenu {
+        display: none;
+    }
+
+
 }
 
 
@@ -659,6 +655,10 @@ ul li:hover > ul {
     header {
         padding-top: 20px;
     
+    }
+
+    .header__pages {
+        align-content: center;
     }
 
     .nav-logo h1 {
