@@ -6,113 +6,112 @@
         <title>QUINTELA</title>
         <link rel="shortcut icon" href="../asetts/img/logo.png.png" type="image/x-icon">
 
+        <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
+        <!-- style.css -->
         <link rel="stylesheet" href="../styles/style.css">
     </head>
     
     
     <body>
-        <!------------------- HEADER ------------------->
-        
-        <header class="header__pages">
-            <div>
-                <nav class="header__navbar">
-                    <ul class="header__navbar-content">
-                        <li class="nav-item corner">
-                            <a href="#">
+        <!------------------- comienzo de header ------------------->
+
+        <header class="sticky-top header__pages">
+            <nav class="navbar navbar-expand-lg bg-light" style="--bs-bg-opacity: .5;">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-lg-none" href="../index.html">
+                        <img src="../asetts/img/logo.png.png" alt="Inicio">
+                    </a>                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link active " aria-current="page" href="#">                                
                                 <img src="../asetts/img/logo-lupa.png" alt="Buscar" width="40px">
-                            </a>                    
+                            </a>
                         </li>
-    
-                        <li class="nav-item menuH"><a href="../pages/productos.html">PRODUCTOS</a>
-    
-                            <!--------------- SUBMENU----------------->
-    
-                            <ul class="submenu">
-                                <li><a href="#">Alfajores</a></li>
-                                <li><a href="#">Budines</a></li>
-                                <li><a href="#">Brownies</a></li>
-                                <li><a href="#">Cookies</a></li>
-                                <li><a href="#">Mini Tortas</a></li>  
-                                <li><a href="#">Tartas</a></li>      
-                                <li><a href="#">Tortas</a></li>                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu bg-light" style="--bs-bg-opacity: .5;">
+                                <li><a class="dropdown-item fw-bold" href="../pages/productos.html">TODO</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#alfajoresCard">Alfajores</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#budinesCard">Budines</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#browniesCard">Brownies</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#cookiesCard">Cookies</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#minitortasCard">Mini Tortas</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#tartasCard">Tartas</a></li>
+                                <li><a class="dropdown-item" href="../pages/productos.html#tortasCrd">Tortas</a></li>
                             </ul>
-    
-                        </li>
-    
-                        <li class="nav-item menuH"> <a href="../pages/nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-logo">
-                                <h1>QUINTELA</h1>
-                                <a  href="../index.html">
-                                    <img src="../asetts/img/logo.png.png" alt="logo QUINTELA" width="80px">
-                                </a>
-                            </div>                           
+                            <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
                         </li>
-                        <li class="nav-item menuH"><a href="../pages/contacto.html">CONTACTO</a></li>
-                        <li class="nav-item menuH"><a href="../pages/preguntas.html">PREGUNTAS</a></li>
-                        <li class="nav-item corner"> 
-                            <a href="#">
+                        <a class="navbar-brand d-none d-lg-block" href="../index.html">
+                            <img src="../asetts/img/logo.png.png" alt="Inicio">
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/preguntas.html">PREGUNTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
                                 <img src="../asetts/img/carrito.png" alt="Ir al carrito" width="40px">
                             </a>
                         </li>
-                    </ul>
-                </nav>  
-                <span class="hamburger__menu"> 
-                    <img src="../asetts/img/menu-hamburguesa.png" alt="Menú" width="40px">
-                </span>         
-            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <div class="pagestitle">
                 <h1>PRODUCTOS</h1>
             </div>
-        </header>             
-            
-        <!---------------- MAIN ------------------->            
+        </header> 
+                    
+        <!------------------ fin de header --------------------> 
+
+        <!---------------- comienzo de main ------------------->  
+
         <main class="prodmain">
 
             <section class=" prodmenu">
-                <input  class="prodmenu__search" type="text" placeholder="Busca...">
+                <nav class="navbar bg-light">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </nav>
+                
                 <div class="prodmenu__categories">
                     <h2>CATEGORÍAS</h2>
                     <ul class="prodmenu__categories-list">
-                        <li><a href="#">Alfajores</a></li>
-                        <li><a href="#">Budines</a></li>
-                        <li><a href="#">Brownies</a></li>
-                        <li><a href="#">Cookies</a></li>
-                        <li><a href="#">Mini Tortas</a></li>
-                        <li><a href="#">Tartas</a></li>
-                        <li><a href="#">Tortas</a></li>
+                        <li><a href="#alfajoresCard">Alfajores</a></li>
+                        <li><a href="#budinesCard">Budines</a></li>
+                        <li><a href="#browniesCard">Brownies</a></li>
+                        <li><a href="#cookiesCard">Cookies</a></li>
+                        <li><a href="#minitortasCard">Mini Tortas</a></li>
+                        <li><a href="#tartasCard">Tartas</a></li>
+                        <li><a href="#tortasCard">Tortas</a></li>
                                                   
                     </ul>
                 </div>
             </section>
 
             <section class="products">
-                <div class="products__org">
-
-                    <h4>Mostrar:</h4>
-                    <img src="../asetts/img/distribución.png" alt="Mostrar de a 4 productos" width="20px">
-                    <img src="../asetts/img/distribución.png" alt="Mostrar de a 4 productos" width="20px">
-
-                    <div>
-                        <select name="" id="">
-                            <option disabled selected value="">Ordenar por:</option>
-                            <option value="">Precio: mayor a menor </option>
-                            <option value="">Precio: menor a mayor</option>
-                            <option value="">A - Z</option>
-                            <option value="">Z - A</option>
-                            <option value="">Más vendidos</option>
-                        </select>
-                    </div>
-                    
-                </div>
 
                 <div class="products__cards">
 
-                    <article class="card">
+                    <article class="card" id="alfajoresCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/AlfajorComún.jpg" alt="Imágen del producto" width="150" height="150">
                         </div>
@@ -140,7 +139,7 @@
                         <a class="card__link" href="">Añadir al carrito</a>
                     </article>
 
-                    <article class="card">
+                    <article class="card" id="budinesCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/BudínLimón.png" alt="Imágen del producto" width="150" height="150">
                         </div>        
@@ -176,7 +175,7 @@
                         <a class="card__link" href="">Añadir al carrito</a>
                     </article>
 
-                    <article class="card">
+                    <article class="card" id="browniesCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/Brownie.png" alt="Imágen del producto" width="150" height="150">
                         </div>        
@@ -186,6 +185,15 @@
                     </article>
 
                     <article class="card">
+                        <div class="card__header">                    
+                            <img class="card__header-img" src="../asetts/img/MiniBrownie.jpg" alt="Imágen del producto" width="150" height="150">
+                        </div>        
+                        <h2 class="card__title">Mini Brownie</h2>
+                        <h5 class="card__price">$ 000,00</h5>           
+                        <a class="card__link" href="">Añadir al carrito</a>
+                    </article>
+
+                    <article class="card" id="cookiesCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/Cookies2.jpg" alt="Imágen del producto" width="150" height="150">
                         </div>        
@@ -203,16 +211,7 @@
                         <a class="card__link" href="">Añadir al carrito</a>
                     </article>                   
 
-                    <article class="card">
-                        <div class="card__header">                    
-                            <img class="card__header-img" src="../asetts/img/MiniBrownie.jpg" alt="Imágen del producto" width="150" height="150">
-                        </div>        
-                        <h2 class="card__title">Mini Brownie</h2>
-                        <h5 class="card__price">$ 000,00</h5>           
-                        <a class="card__link" href="">Añadir al carrito</a>
-                    </article>
-
-                    <article class="card">
+                    <article class="card" id="minitortasCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/MiniCheesecake.jpg" alt="Imágen del producto" width="150" height="150">
                         </div>        
@@ -239,7 +238,7 @@
                         <a class="card__link" href="">Añadir al carrito</a>
                     </article>
 
-                    <article class="card">
+                    <article class="card" id="tartasCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/TartaHavanette.png" alt="Imágen del producto" width="150" height="150">
                         </div>        
@@ -266,7 +265,7 @@
                         <a class="card__link" href="">Añadir al carrito</a>
                     </article>
 
-                    <article class="card">
+                    <article class="card" id="tortasCard">
                         <div class="card__header">                    
                             <img class="card__header-img" src="../asetts/img/TortaBrownie.png" alt="Imágen del producto" width="150" height="150">
                         </div>        
@@ -311,80 +310,82 @@
     
            
             
-        </main>                        
-            
-         <!------------- comienzo de footer ------------->
-    <footer>
-        <div class="container-fluid">
-
-            <div class="row p-5 bg-secondary text-white">
-                <div class=" col-md-4 d-flex flex-column align-items-center">
-                    <h2>Navegación</h2>
-                    <ul class="footer__nav text-center">
-                        <li>
-                            <a href="../index.html" class="text-white">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="../pages/productos.html" class="text-white">Productos</a>
-                        </li>
-                        <li>
-                            <a href="../pages/nosotros.html" class="text-white">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="../pages/contacto.html" class="text-white">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="../pages/preguntas.html" class="text-white">Preguntas</a>
-                        </li>
-                    </ul>
+        </main> 
+        <!------------- fin de main -------------> 
+        
+        
+        <!------------- comienzo de footer ------------->
+        <footer>
+            <div class="container-fluid">
+    
+                <div class="row p-2 bg-secondary text-white">
+                    <div class=" col-md-4 d-flex flex-column align-items-center">
+                        <h2 class="footer__h2 mt-4 ms-4">Navegación</h2>
+                        <ul class="footer__nav text-right
+                        ">
+                            <li>
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href=".../pages/productos.html">Productos</a>
+                            </li>
+                            <li>
+                                <a href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="../pages/contacto.html">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="../pages/preguntas.html">Preguntas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-4 d-flex flex-column align-items-center">
+                        <a href="../index.html"><img class="footer__brand" src="../asetts/img/logo.png.png" alt="logo QUINTELA" width="80px"></a>
+                        <h5>Nuestra Redes </h5>
+                        <ul class="footer__socials d-flex">
+                            <li>
+                                <a href="#" class="me-3"><img src="../asetts/img/logo-wpp.png" alt="whatsapp" width="35px"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="me-3"><img src="../asetts/img/logo-fb.png" alt="facebook" width="35px"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="me-3"><img src="../asetts/img/logo-ig.png" alt="instagram" width="35px"></a>
+                            </li>
+                            
+                        </ul>
+                        <p>QUINTELA 2022 &copy; | Todos los derechos reservados</p>
+                    </div>
+                    
+                    <div class=" col-md-4 d-flex flex-column align-items-center mt-4" >
+                        <h2>Contactanos</h2>
+                        <ul class="footer__contact">
+                            <li class="d-flex">
+                                <a href="#"><img src="../asetts/img/logo-maps.png" alt="mapa" width="20px"></a>
+                                <p class="ms-2">Los Alerces 311, Saavedra, Comodor Rivadavia</p>
+                            </li>
+                            <li class="d-flex">
+                                <a href="#"><img src="../asetts/img/logo-email.png" alt="e-mail" width="20px"></a>
+                                <p class="ms-2 ">quintela_pastelería@gmail.com</p>
+                            </li>
+                            <li class="d-flex">
+                                <a href="#"><img src="../asetts/img/logo-tel.png" alt="telefono" width="20px"></a>
+                                <p class="ms-2">000-000000</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class=" col-md-4 d-flex flex-column align-items-center">
-                    <a href="../index.html"><img src="../asetts/img/logo.png.png" alt="logo QUINTELA" width="80px"></a>
-                    <h2>Nuestras Redes</h2>
-                    <ul class="footer__socials d-flex">
-                        <li>
-                            <a href="#" class="me-3"><img src="../asetts/img/logo-wpp.png" alt="whatsapp" width="35px"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="me-3"><img src="../asetts/img/logo-fb.png" alt="facebook" width="35px"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="me-3"><img src="../asetts/img/logo-ig.png" alt="instagram" width="35px"></a>
-                        </li>
-                        
-                    </ul>
-                    <p>&copy; QUINTELA 2022</p>
-                </div>
-                
-                <div class=" col-md-4 d-flex flex-column align-items-center" >
-                    <h2>Contactanos</h2>
-                    <ul class="footer__contact">
-                        <li class="d-flex">
-                            <a href="#"><img src="../asetts/img/logo-maps.png" alt="mapa" width="20px"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </li>
-                        <li class="d-flex">
-                            <a href="#"><img src="../asetts/img/logo-email.png" alt="e-mail" width="20px"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </li>
-                        <li class="d-flex">
-                            <a href="#"><img src="../asetts/img/logo-tel.png" alt="telefono" width="20px"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </li>
-                    </ul>
-                </div>
+    
             </div>
-
-        </div>
-        <div>
-            <a class="whatsapp" href="">
-                <img src="../asetts/img/logo-wpp-verde.png" alt="whatsapp" width="50px">
-            </a>
-        </div>
+            <div>
+                <a class="whatsapp" href="">
+                    <img src="../asetts/img/logo-wpp-verde.png" alt="whatsapp" width="50px">
+                </a>
+            </div>
+            
+        </footer>
+        <!------------- fin de footer ------------->
         
-    </footer>
-    <!------------- fin de footer ------------->
-        
-
     </body>
     </html>
