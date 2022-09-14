@@ -90,7 +90,6 @@ ul {
     width: 170px;
     height: 45px;
     margin-top: 20px;
-    font-size: 15px;
 
     color: black;
     background-color: rgba(255, 255, 255, 0.7);
@@ -100,7 +99,7 @@ ul {
 
 .hero__button {
     transition: all 0.3s;
-    background-color: red;
+    font-weight: 600;
 }
 
 .hero__button:hover {
@@ -198,7 +197,7 @@ ul {
 
 }
 
-.card{
+.cards{
     background-color: white;
     padding: 20px;
     width: 250px;
@@ -209,7 +208,7 @@ ul {
     transition: all 0.3s;
 }
 
-.card:hover {
+.cards:hover {
     transform: scale(1.1);
 }
 
@@ -280,7 +279,11 @@ ul {
 
 .aboutus-img  img{
     border-radius: 10%;
-    border: solid 10px #ffc0cb ;
+    border: solid 10px #ffc0cb;
+    width: 500px;
+
+    transition: all .2;
+
 }
 
 .aboutus div p {
@@ -288,12 +291,6 @@ ul {
     font-size: 15px;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
 
 
 @keyframes animacion {
@@ -309,46 +306,20 @@ ul {
 
 /* ---------- contacto.html-----------*/
 
-.head_contact {
-    background-size: 100% 100%;
-    width: 100%;
-}
+    .cards-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-.card_findUs {
-    background-color: #ffc0cb;
-    border-radius: 20px;
-}
+    .card {
+        margin: 0.5rem;
+    }
 
-
-.contact__info {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-
-.contact__form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.contact__buttons {
-    height: 50px;
-    font-size: 15px;
-
-    color: black;
-    background-color: white;
-    border-radius: 5px;
-    border-color: black;  
-}
-
-
-.contact__list li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
-}  */
+    .head_contact {
+        background-color: #ffc0cb;
+        background-size: 100% 100%;
+        width: 100%;
+    }
 
 
 /* ---------- preguntas.html-----------*/
@@ -411,8 +382,8 @@ ul {
 /* ------------- MEDIA QUERIES-------------*/
 
 @media (max-width:992px){
-    .aboutus {
-        
+
+    .aboutus {        
         display: flex;
         flex-direction: column;         
     }
@@ -421,13 +392,6 @@ ul {
     }
 }
 
-@media (max-width:827px){
-    
-    .hero_h1 h1 {
-        font-size: 25px;
-        text-align: center;
-    }
-}
 
 @media (max-width:768px) {
 
@@ -440,69 +404,34 @@ ul {
         display: none;
     }
 
-    .main__contact {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr;
-        place-items: center;
-    }
+}
 
-    .contact {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: 10px;
-    }
+@media (max-width:576px) {
 
-    .contact__map {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .contact__info {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
+    /* .aboutus_img {
+        transform: scale(0.5);
+    } */
 }
 
 
 @media (max-width:527px){
-    
-    .hero_h1 h1 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .aboutus_img {
-        margin: 30px;
-    }
-
     .prodmenu {
         display: none;
     }
 
-
+    .aboutus-img  img {
+        width: 450px;
+    }
 }
-
 
 @media (max-width:480px) {
 
-    .hero {
-        width: 100%;
-        height: 50vh;
-    
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr 1fr;
-        grid-template-areas: 
-        "header"
-        "title"
-        "button"
-        "socials";
+    .aboutus-img  img {
+        width: 350px;
     }
-       
 
-    .hero_h1 h1 {
-        font-size: 20px;
+    .hero_content h2 {
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -510,7 +439,7 @@ ul {
         width: 100px;
         height: 40px;
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 1rem;
         
     }
     
